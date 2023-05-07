@@ -1,0 +1,57 @@
+ currClass is ['class', 'person', ['field', 'name', '""'], ['field', 'age', '0'], ['method', 'init', ['n', 'a'], ['begin', ['set', 'name', 'n'], ['set', 'age', 'a']]], ['method', 'talk', ['to_whom'], ['print', 'name', '" says hello to "', 'to_whom']], ['method', 'get_age', [], ['return', 'age']]]
+class name is person
+IN FIELD
+field hash table is {'name': <__main__.Field object at 0x102a2bad0>}
+IN FIELD
+field hash table is {'name': <__main__.Field object at 0x102a2bad0>, 'age': <__main__.Field object at 0x102a2bb10>}
+IN METHOD
+IN METHOD
+IN METHOD
+classObj is <__main__.Class object at 0x102a2bc10>
+methodHashTable in run is {'init': (method init (n a) begin ['set', 'name', 'n'] ['set', 'age', 'a']), 'talk': (method talk (to_whom) print name " says hello to " to_whom), 'get_age': (method get_age () return age)}
+classHashTable in run is {'person': <__main__.Class object at 0x102a2bc10>}
+CLEARED
+methodHashTable AFTERRRRRRR in run is {}
+fieldHashTable AFTERRRRRR in run is {}
+ currClass is ['class', 'main', ['field', 'p', 'null'], ['method', 'tell_joke', ['to_whom'], ['print', '"Hey "', 'to_whom', '", knock knock!"']], ['method', 'main', [], ['begin', ['call', 'me', 'tell_joke', '"Leia"'], ['set', 'p', ['new', 'person']], ['call', 'p', 'init', '"Siddarth"', '25'], ['call', 'p', 'talk', '"Boyan"'], ['print', '"Siddarth\'s age is "', ['call', 'p', 'get_age']]]]]
+class name is main
+IN FIELD
+field hash table is {'p': <__main__.Field object at 0x102a2bcd0>}
+IN METHOD
+IN METHOD
+classObj is <__main__.Class object at 0x102a2bd10>
+methodHashTable in run is {'tell_joke': (method tell_joke (to_whom) print "Hey " to_whom ", knock knock!"), 'main': (method main () begin ['call', 'me', 'tell_joke', '"Leia"'] ['set', 'p', ['new', 'person']] ['call', 'p', 'init', '"Siddarth"', '25'] ['call', 'p', 'talk', '"Boyan"'] ['print', '"Siddarth\'s age is "', ['call', 'p', 'get_age']])}
+classHashTable in run is {'person': <__main__.Class object at 0x102a2bc10>, 'main': <__main__.Class object at 0x102a2bd10>}
+CLEARED
+methodHashTable AFTERRRRRRR in run is {}
+fieldHashTable AFTERRRRRR in run is {}
+{'tell_joke': (method tell_joke (to_whom) print "Hey " to_whom ", knock knock!"), 'main': (method main () begin ['call', 'me', 'tell_joke', '"Leia"'] ['set', 'p', ['new', 'person']] ['call', 'p', 'init', '"Siddarth"', '25'] ['call', 'p', 'talk', '"Boyan"'] ['print', '"Siddarth\'s age is "', ['call', 'p', 'get_age']])}
+FIELDS IN OBJECTS IS {'p': <__main__.Field object at 0x102a42090>}
+METHODS IN OBJECTS IS {'tell_joke': (method tell_joke (to_whom) print "Hey " to_whom ", knock knock!"), 'main': (method main () begin ['call', 'me', 'tell_joke', '"Leia"'] ['set', 'p', ['new', 'person']] ['call', 'p', 'init', '"Siddarth"', '25'] ['call', 'p', 'talk', '"Boyan"'] ['print', '"Siddarth\'s age is "', ['call', 'p', 'get_age']])}
+METHOD BODY IS ['begin', ['call', 'me', 'tell_joke', '"Leia"'], ['set', 'p', ['new', 'person']], ['call', 'p', 'init', '"Siddarth"', '25'], ['call', 'p', 'talk', '"Boyan"'], ['print', '"Siddarth\'s age is "', ['call', 'p', 'get_age']]]
+METHOD PARAM IS []
+statement is ['begin', ['call', 'me', 'tell_joke', '"Leia"'], ['set', 'p', ['new', 'person']], ['call', 'p', 'init', '"Siddarth"', '25'], ['call', 'p', 'talk', '"Boyan"'], ['print', '"Siddarth\'s age is "', ['call', 'p', 'get_age']]]
+statement is ['call', 'me', 'tell_joke', '"Leia"']
+MAPPED PARAMETERS IS ['"Leia"']
+ME METHOD IS PARAM ['to_whom']
+ME METHOD BODY IS ['print', '"Hey "', 'to_whom', '", knock knock!"']
+statement is ['print', '"Hey "', 'to_whom', '", knock knock!"']
+PARAMETER DICT IN EXECUTE IS {'to_whom': '"Leia"'}
+YAYYYYYYYY "Hey "to_whom", knock knock!"
+PARAMETER DICT IN PRINT IS {'to_whom': '"Leia"'}
+SUBBBB IS "Hey "
+SUBBBB IS to_whom
+SUBBBB IS ", knock knock!"
+YAYYYYYYYY Hey Leia, knock knock!
+PARAMETERS is ['"Leia"']
+call list is ['call', 'me', 'tell_joke', '"Leia"']
+statement is ['set', 'p', ['new', 'person']]
+set statement
+LIST
+NEW
+OBJECT TO INSTANTIATE IS person
+{'init': (method init (n a) begin ['set', 'name', 'n'] ['set', 'age', 'a']), 'talk': (method talk (to_whom) print name " says hello to " to_whom), 'get_age': (method get_age () return age)}
+INSTANTIATED OBJ IS <__main__.Object object at 0x102a42190>
+statement is ['call', 'p', 'init', '"Siddarth"', '25']
+MAPPED PARAMETERS IS ['"Siddarth"', '25']
+INTERPRETER PTR TEMP IS {'person': <__main__.Class object at 0x102a2bc10>, 'main': <__main__.Class object at 0x102a2bd10>}

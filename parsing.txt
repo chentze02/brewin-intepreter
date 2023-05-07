@@ -1,0 +1,20 @@
+(class main
+ (field p 6)
+ (field d 5)
+ (field s 10)
+ (field w null)
+ (method tell_joke (x)
+    (begin
+    (print "Hey ," x "knock knock!")
+    (print "HEFHFHOF")
+    ))
+  (method main ()
+    (begin
+        (set d 8)
+        (inputi d)
+        (inputs s)
+      (print "Enter a number: " (== 36 (+ (* p d) 6)) (+ "banana" "pine"))
+      (print "hello" "huhu" p d s)
+      (print "hello" (call me tell_joke 5))
+
+)))

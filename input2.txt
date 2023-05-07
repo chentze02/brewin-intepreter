@@ -1,0 +1,19 @@
+(class main
+ (field p 6)
+ (field d 5)
+  (method main ()
+    (begin
+      (set d 10)
+      (print "Enter a number: " (+ d p) (+ "banana" "pine"))
+      (print "hello" "huhu" p)
+      (call me func 234234)
+      (print (== 21 (+ (* 3 5) 6)))
+))
+
+(method func (x)
+    (begin
+      (print "Enter a number: " x "sfjlkdsf")
+      (print "hello" "huhu" p)
+))
+
+)
