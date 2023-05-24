@@ -1,25 +1,49 @@
-# CS 131 Spring 2023: Project Starter
+# BREWIN INTERPRETER IN PYTHON (VERSION 2 IS NOW OUT)
 
-Hey there! This is a template repository that contains the necessary boilerplate for [CS 131](https://ucla-cs-131.github.io/spring-23/)'s quarter-long project: making an interpreter. The project specs are as follows:
+**NOW SUPPORTS INHERITANCE, PARAMETRIC POLYMORPHISM, STATIC TYPING, VARIABLE SHADOWING**
 
-1. [Project 1 Spec](https://docs.google.com/document/d/1pPQ2qZKbbsbZGBSwvuy1Ir-NZLPMgVt95WPQuI5aPho)
+1. Clone the repository to your local machine.
 
-There are three stages to the project; students are currently at the first. Thus, this folder contains the necessary bootstrapping code:
+2. Write a program in Brewin:
 
-- `intbase.py`, the base class and enum definitions for the interpreter
-- `bparser.py`, a static `parser` class to parse Brewin programs
+```brewin
+(class obj
+  (method obj obj_call ()
+    (print "object")
+  )
+)
 
-Some notes on your submission (for Project 1)
+(class main
+  (field obj object null)
+  (method void main ()
+    (begin
+      (set object (new obj))
+      (print (call me void_call))
+      (print (call me null_call))
+      (print (call me int_call))
+      (print (call me bool_call))
+      (print (call me string_call))
+      (print (call object obj_call))
+    )
+  )
+  
+  (method void void_call ()
+    (print "void")
+  )
+  (method main null_call ()
+    (print "null")
+  )
+  (method int int_call ()
+    (print "int")
+  )
+  (method bool bool_call ()
+    (print "bool")
+  )
+  (method string string_call ()
+    (print "string")
+  )
+)
 
-1. You **must have a top-level, versioned `interpreterv1.py` file** that **exports the `Interpreter` class**. If not, **your code will not run on our autograder**.
-2. You may also submit one or more additional `.py` modules that your interpreter uses, if you decide to break up your solution into multiple `.py` files.
-3. You **should not modify/submit `intbase.py` or `bparser.py`**; we will use our own when grading.
+3. Put the file into input.txt and run python3 interpreter.py.
 
-You can find out more about our autograder, including how to run it, in [its accompanying repo](https://github.com/UCLA-CS-131/spring-23-autograder).
-
-## Licensing and Attribution
-
-This is an unlicensed repository; even though the source code is public, it is **not** governed by an open-source license.
-
-This code was primarily written by [Carey Nachenberg](http://careynachenberg.weebly.com/), with support from his TAs for the [Spring 2023 iteration of CS 131](https://ucla-cs-131.github.io/spring-23/).
-# brewin-intepreter
+4. Watch your Brewin Program get interpreted.
